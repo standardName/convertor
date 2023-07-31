@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+  color: #002333;
+}
+.convert-block {
+  font-size: 16px;
+  width: 80%;
+  margin: auto;
+}
+.convert-header {
+  width: 100%;
+  height: 25px;
+  background-color: #b4bec9;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.valutes-block {
+  padding-top: 30px;
+  border-radius: 5px;
+  background-color: #deefe7;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.convert-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.convert-header div {
+  width: 30%;
+}
+.valutes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dfdede;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: 0.2s linear  all;
+}
+.valutes:hover{
+  background-color: #9ad7ba;
+}
+.valutes div {
+  width: 30%;
+  text-align: lc;
+}
+.convert-absolute {
+  width: 100%;
+  height: 100px;
+  background-color: #b4bec9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.convert-absolute input {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #159A9C;
+  outline: 1px solid #159A9C;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Убираем отступы */
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Убираем стилизацию Firefox */
+}
+.active{
+  background-color: #b4bec9;
+  border: none;
+  color: #159A9C;
+}
+@media screen and (max-width: 812px){
+  .convert-block{
+    width: 100%;
+    padding: 5px;
+  }
+  .convert-header, .valutes{
+    justify-content: space-between;
+    padding-left: 5px;
+  }
+  .convert-absolute{
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+  }
+  label{
+    display: none;
+  }
+  .convert-absolute input{
+    width: 90%;
+    padding: 5px;
+    
+  }
+  br{
+    display: none;
+  }
+}
