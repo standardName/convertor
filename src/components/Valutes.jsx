@@ -17,7 +17,7 @@ export default function Valutes() {
     }
     fetchData();
   }, []);
-  console.log(data);
+ 
   function handleConvert(arg) {
     setShow(arg);
     setRubValue("");
